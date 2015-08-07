@@ -1,4 +1,4 @@
-FROM mesos:0.23.0
+FROM mesos
 MAINTAINER RedJack, LLC
 
 EXPOSE 5050
