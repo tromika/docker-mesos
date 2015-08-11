@@ -20,6 +20,7 @@ RUN apt-get -y update
 RUN /bin/echo debconf shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install oracle-java7-installer oracle-java7-set-default
 
+RUN apt-get -y install curl
 
 WORKDIR /tmp
 RUN \
